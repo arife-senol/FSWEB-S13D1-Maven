@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         //System.out.println(shouldWakeUp(true,13));
+        //System.out.println(area(9.0));
         System.out.println("Hello world!");
     }
 
@@ -54,6 +55,12 @@ public class Main {
     }
 
     public static double area(double radius) {
-       return 10.0;
+       if(radius>=0){
+           return Math.PI*radius*radius;
+       }
+       else{
+           return -1;
+
+       }
     }
 }
