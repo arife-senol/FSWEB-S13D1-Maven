@@ -1,11 +1,17 @@
 package org.example;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class Main {
     public static void main(String[] args) {
 
         //System.out.println(shouldWakeUp(true,13));
         //System.out.println(area(9.0));
         System.out.println("Hello world!");
+
+//        System.out.println(isCatPlaying(true, 10));
+//        System.out.println(isCatPlaying(false, 36));
+//        System.out.println(isCatPlaying(false, 35));
     }
 
     public static boolean shouldWakeUp(boolean isBarking, int clock) {
@@ -29,14 +35,14 @@ public class Main {
 
     public static boolean isCatPlaying(boolean isSummer, int temp) {
         if (isSummer) {
-            if (temp >= 25 && temp <= 35) {
+            if (temp >= 25 && temp <= 45) {
                 return true;
             } else {
                 return false;
             }
         }
         else {
-            if (temp >= 25 && temp <= 45) {
+            if (temp >= 25 && temp <= 35) {
                 return true;
             } else {
                 return false;
