@@ -2,6 +2,8 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
+
+        //System.out.println(shouldWakeUp(true,13));
         System.out.println("Hello world!");
     }
 
@@ -43,7 +45,12 @@ public class Main {
     }
 
     public static double area(double width, double height) {
-        return 10.0;
+        if(width>=0 && height>=0 ){
+            return width*height;
+        }
+        else{
+            return -1;
+        }
     }
 
     public static double area(double radius) {
